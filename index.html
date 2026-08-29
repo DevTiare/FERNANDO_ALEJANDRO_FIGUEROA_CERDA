@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Figueroa Cerda | Jefe de Bodega & Operador de Grúa Horquilla</title>
+    <meta name="description" content="Perfil profesional y CV de Fernando Alejandro Figueroa Cerda - Jefe de Bodega, Operador de Grúa Horquilla (+10 años) con Licencia Clase D vigente.">
+    <meta name="author" content="Fernando Figueroa Cerda">
+    
+    <!-- Tailwind CSS v3 CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        industrial: {
+                            bg: '#FAF6F0',
+                            card: '#FFFFFF',
+                            espresso: '#261810',
+                            mocha: '#4A3427',
+                            copper: '#B85D19',
+                            terracotta: '#A84313',
+                            amber: '#D97706',
+                            sand: '#F4EBE1'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- FontAwesome & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-fontawesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-[#FAF6F0] text-[#261810] min-h-screen selection:bg-[#B85D19] selection:text-white">
+
+    <!-- NAVBAR (Industrial Dark Espresso Header) -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-[#261810]/95 backdrop-blur-md border-b-2 border-[#B85D19] shadow-xl shadow-[#261810]/20 transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                
+                <!-- Brand -->
+                <a href="#inicio" class="flex items-center space-x-3 group">
+                    <span class="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#B85D19] to-[#A84313] flex items-center justify-center text-white font-extrabold text-lg shadow-md group-hover:scale-105 transition-transform border border-[#F4EBE1]/20">
+                        FF
+                    </span>
+                    <div class="flex flex-col">
+                        <span class="font-bold text-base tracking-tight text-white group-hover:text-[#E2D3C4] transition-colors leading-none font-heading">
+                            FERNANDO FIGUEROA
+                        </span>
+                        <span class="text-[10px] font-mono text-[#B85D19] tracking-wider uppercase font-semibold">
+                            Operaciones Logísticas & Bodega
+                        </span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-1 text-xs font-semibold uppercase tracking-wider">
+                    <a href="#sobre-mi" class="text-[#F4EBE1] hover:text-white hover:bg-[#4A3427] px-3 py-2 rounded-lg transition-all">Perfil</a>
+                    <a href="#perfil-doble" class="text-[#F4EBE1] hover:text-white hover:bg-[#4A3427] px-3 py-2 rounded-lg transition-all">Gestión & Terreno</a>
+                    <a href="#competencias" class="text-[#F4EBE1] hover:text-white hover:bg-[#4A3427] px-3 py-2 rounded-lg transition-all">Habilidades</a>
+                    <a href="#experiencia" class="text-[#F4EBE1] hover:text-white hover:bg-[#4A3427] px-3 py-2 rounded-lg transition-all">Experiencia</a>
+                    <a href="#contacto" class="text-[#F4EBE1] hover:text-white hover:bg-[#4A3427] px-3 py-2 rounded-lg transition-all">Contacto</a>
+                </div>
+
+                <!-- Action Button -->
+                <div class="hidden md:flex items-center space-x-3">
+                    <a href="assets/curriculum_vitae_Fernando_Figueroa.pdf" download="curriculum_vitae_Fernando_Figueroa.pdf" class="px-4 py-2.5 text-xs font-bold rounded-xl bg-gradient-to-r from-[#B85D19] to-[#A84313] hover:from-[#A84313] hover:to-[#B85D19] text-white shadow-lg shadow-[#B85D19]/30 transition-all flex items-center gap-2 transform hover:-translate-y-0.5 border border-white/10" title="Descargar CV en PDF">
+                        <i class="fa-solid fa-file-pdf"></i> Descargar CV PDF
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center space-x-2">
+                    <a href="assets/curriculum_vitae_Fernando_Figueroa.pdf" download="curriculum_vitae_Fernando_Figueroa.pdf" class="p-2 rounded-lg bg-[#B85D19] text-white text-xs">
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg bg-[#4A3427] text-white border border-[#B85D19]">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#261810] border-b border-[#B85D19] px-4 pt-2 pb-4 space-y-2 text-sm font-medium">
+            <a href="#sobre-mi" class="block py-2 text-[#F4EBE1] hover:text-white hover:bg-[#4A3427] px-3 rounded-lg">Perfil</a>
+            <a href="#perfil-doble" class="block py-2 text-[#F4EBE1] hover:text-white hover:bg-[#4A3427] px-3 rounded-lg">Gestión & Terreno</a>
+            <a href="#competencias" class="block py-2 text-[#F4EBE1] hover:text-white hover:bg-[#4A3427] px-3 rounded-lg">Habilidades</a>
+            <a href="#experiencia" class="block py-2 text-[#F4EBE1] hover:text-white hover:bg-[#4A3427] px-3 rounded-lg">Experiencia</a>
+            <a href="#contacto" class="block py-2 text-[#F4EBE1] hover:text-white hover:bg-[#4A3427] px-3 rounded-lg">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Industrial Split Grid) -->
+    <section id="inicio" class="pt-32 pb-20 md:pt-40 md:pb-28 relative overflow-hidden bg-gradient-to-b from-[#FAF6F0] via-[#F4EBE1] to-[#FAF6F0]">
+        
+        <!-- Subtle Pattern Background -->
+        <div class="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#261810_1px,transparent_1px)] [bg-size:16px_16px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Main Bio Column -->
+                <div class="lg:col-span-7 space-y-6">
+                    
+                    <!-- Industrial License Tag -->
+                    <div class="inline-flex flex-wrap items-center gap-2 px-4 py-1.5 rounded-full bg-[#F3E7DB] border border-[#D6C1AD] text-[#4A3427] text-xs font-bold shadow-sm">
+                        <span class="w-2.5 h-2.5 rounded-full bg-[#B85D19] pulse-copper"></span>
+                        Licencia Clase D Al Día y Vigente | +10 Años Grúa Horquilla
+                    </div>
+
+                    <!-- Main Name Heading -->
+                    <div class="space-y-2">
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#261810] tracking-tight font-heading leading-tight">
+                            FERNANDO ALEJANDRO <br>
+                            <span class="bg-clip-text text-transparent bg-gradient-to-r from-[#B85D19] via-[#A84313] to-[#4A3427]">FIGUEROA CERDA</span>
+                        </h1>
+                        <p class="text-xl sm:text-2xl font-bold text-[#B85D19] font-heading">
+                            Jefe de Bodega | Operador Experto de Grúa Horquilla
+                        </p>
+                    </div>
+
+                    <!-- Professional Summary Text -->
+                    <p class="text-[#4A3427] text-base sm:text-lg leading-relaxed font-normal">
+                        Profesional del área logística y operativa con más de <strong class="text-[#261810] font-bold">10 años de experiencia comprobable</strong> en gestión integral de bodegas, control de inventarios y operación técnica de grúa horquilla. Enfoque riguroso en normas de seguridad industrial, optimización de flujos de trabajo, resolución de incidencias operativas y cumplimiento de metas de producción.
+                    </p>
+
+                    <!-- Contact & Identity Badges Grid -->
+                    <div class="grid sm:grid-cols-3 gap-3 pt-2 text-xs font-mono">
+                        <div class="flex items-center gap-2 bg-white px-3 py-2 rounded-xl border border-[#E5D5C5] shadow-sm">
+                            <i class="fa-solid fa-phone text-[#B85D19] text-sm"></i>
+                            <span class="text-[#261810] font-bold">+56 9 2077 4413</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white px-3 py-2 rounded-xl border border-[#E5D5C5] shadow-sm">
+                            <i class="fa-solid fa-id-card text-[#B85D19] text-sm"></i>
+                            <span class="text-[#261810] font-bold">RUT 17.757.942-4</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white px-3 py-2 rounded-xl border border-[#E5D5C5] shadow-sm">
+                            <i class="fa-solid fa-truck-front text-[#B85D19] text-sm"></i>
+                            <span class="text-[#261810] font-bold">Licencia Clase D</span>
+                        </div>
+                    </div>
+
+                    <!-- Call To Action Buttons -->
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#contacto" class="px-6 py-3.5 rounded-xl bg-gradient-to-r from-[#B85D19] to-[#A84313] hover:from-[#A84313] hover:to-[#B85D19] text-white font-bold shadow-lg shadow-[#B85D19]/30 transition-all transform hover:-translate-y-0.5 flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane"></i> Contactar Oportunidad
+                        </a>
+                        <a href="#experiencia" class="px-6 py-3.5 rounded-xl bg-white hover:bg-[#F4EBE1] text-[#261810] font-bold border-2 border-[#E5D5C5] transition-all flex items-center gap-2 shadow-sm">
+                            <i class="fa-solid fa-industry"></i> Ver Trayectoria
+                        </a>
+                        <a href="assets/curriculum_vitae_Fernando_Figueroa.pdf" download="curriculum_vitae_Fernando_Figueroa.pdf" class="px-6 py-3.5 rounded-xl bg-[#4A3427] hover:bg-[#261810] text-white font-bold shadow-md transition-all flex items-center gap-2">
+                            <i class="fa-solid fa-file-pdf text-amber-400"></i> Descargar CV PDF
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Right Technical Spec Board Column -->
+                <div class="lg:col-span-5">
+                    <div class="industrial-card p-6 sm:p-8 space-y-6 relative border-2 border-[#B85D19]/40">
+                        
+                        <!-- Header Banner -->
+                        <div class="flex items-center justify-between border-b border-[#E5D5C5] pb-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 rounded-xl bg-[#261810] text-[#B85D19] flex items-center justify-center text-2xl shadow-md">
+                                    <i class="fa-solid fa-boxes-packing"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-bold text-[#261810] font-heading">Ficha Técnica Operativa</h3>
+                                    <p class="text-xs text-[#B85D19] font-mono font-semibold">Fernando Figueroa Cerda</p>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 rounded bg-[#F3E7DB] text-[#4A3427] text-[11px] font-bold font-mono border border-[#D6C1AD]">ACTIVO</span>
+                        </div>
+
+                        <!-- Technical Highlights List -->
+                        <div class="space-y-4 text-xs">
+                            
+                            <div class="p-3.5 rounded-xl bg-[#FAF6F0] border border-[#E5D5C5] space-y-1">
+                                <div class="flex justify-between items-center text-[#B85D19] font-bold">
+                                    <span><i class="fa-solid fa-truck-monster mr-1.5"></i> MAQUINARIA PESADA</span>
+                                    <span class="font-mono text-[#261810]">10+ AÑOS</span>
+                                </div>
+                                <p class="text-[#4A3427] text-xs">Operación experta de grúa horquilla, estiba, paletizado y traslado de estructuras metálicas de alto tonelaje.</p>
+                            </div>
+
+                            <div class="p-3.5 rounded-xl bg-[#FAF6F0] border border-[#E5D5C5] space-y-1">
+                                <div class="flex justify-between items-center text-[#B85D19] font-bold">
+                                    <span><i class="fa-solid fa-clipboard-check mr-1.5"></i> CONTROL DE STOCK</span>
+                                    <span class="font-mono text-[#261810]">100% AUDITADO</span>
+                                </div>
+                                <p class="text-[#4A3427] text-xs">Cuadratura periódica de inventario físico vs. digital, cotejo de mercancías y ajuste de discrepancias.</p>
+                            </div>
+
+                            <div class="p-3.5 rounded-xl bg-[#FAF6F0] border border-[#E5D5C5] space-y-1">
+                                <div class="flex justify-between items-center text-[#B85D19] font-bold">
+                                    <span><i class="fa-solid fa-shield-halved mr-1.5"></i> SEGURIDAD INDUSTRIAL</span>
+                                    <span class="font-mono text-[#261810]">CLASE D</span>
+                                </div>
+                                <p class="text-[#4A3427] text-xs">Registro diario de partes de producción, normas internas de seguridad y mantención operativa de patios.</p>
+                            </div>
+
+                        </div>
+
+                        <!-- Spec Footer -->
+                        <div class="pt-2 text-center">
+                            <span class="inline-block text-[11px] font-mono text-[#4A3427] bg-[#F4EBE1] px-3 py-1 rounded-lg border border-[#DEC8B5]">
+                                <i class="fa-solid fa-[#check-double] fa-check mr-1 text-[#B85D19]"></i> Disponible para Incorporación Inmediata
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INDUSTRIAL METRIC BANNER -->
+    <section class="py-10 bg-[#261810] text-[#FAF6F0] border-y-2 border-[#B85D19]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                
+                <div class="p-4 space-y-1 border-r border-[#4A3427] last:border-r-0">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-[#B85D19] font-heading">+10 Años</p>
+                    <p class="text-xs text-[#F4EBE1] font-semibold uppercase tracking-wider">Experiencia Logística</p>
+                </div>
+
+                <div class="p-4 space-y-1 border-r border-[#4A3427] last:border-r-0">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-white font-heading">Clase D</p>
+                    <p class="text-xs text-[#F4EBE1] font-semibold uppercase tracking-wider">Licencia Grúa Al Día</p>
+                </div>
+
+                <div class="p-4 space-y-1 border-r border-[#4A3427] last:border-r-0">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-[#B85D19] font-heading">2 en 1</p>
+                    <p class="text-xs text-[#F4EBE1] font-semibold uppercase tracking-wider">Bodega + Grúa Horquilla</p>
+                </div>
+
+                <div class="p-4 space-y-1">
+                    <p class="text-3xl sm:text-4xl font-extrabold text-white font-heading">100%</p>
+                    <p class="text-xs text-[#F4EBE1] font-semibold uppercase tracking-wider">Cuadratura de Stock</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE MÍ & RESUMEN DE IMPACTO -->
+    <section id="sobre-mi" class="py-20 bg-[#FAF6F0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto space-y-8 text-center">
+                <h2 class="text-xs font-mono font-bold tracking-wider text-[#B85D19] uppercase">[ PERFIL OPERATIVO & LOGÍSTICO ]</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-[#261810] font-heading">Compromiso, Eficiencia y Rigor en Terreno</h3>
+                <p class="text-[#4A3427] text-base sm:text-lg leading-relaxed">
+                    Profesional del área logística y operativa con una destacada trayectoria de más de una década en el rubro industrial y de almacenamiento. Experto en el manejo seguro de maquinaria pesada, estiba y paletizado de carga de alto tonelaje, así como en la administración estratégica de inventarios digitales y coordinación de equipos de trabajo en bodega.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFIL DOBLE (OPERACIÓN EN TERRENO VS GESTIÓN DE BODEGA) -->
+    <section id="perfil-doble" class="py-20 bg-[#F4EBE1]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4">
+                <h2 class="text-xs font-mono font-bold tracking-wider text-[#B85D19] uppercase">[ CAPACIDAD 2 EN 1 ]</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-[#261810] font-heading">Perfil Operativo y de Gestión Integrado</h3>
+                <p class="text-[#4A3427] text-sm sm:text-base">
+                    Fernando combina la destreza técnica directa en terreno con la capacidad administrativa y liderazgo de bodegas.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Pillar 1: Operación de Terreno -->
+                <div class="industrial-card p-8 space-y-5 border-l-8 border-l-[#B85D19]">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-14 h-14 rounded-2xl bg-[#F3E7DB] text-[#B85D19] flex items-center justify-center text-3xl shadow-sm border border-[#D6C1AD]">
+                            <i class="fa-solid fa-truck-monster"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-[#261810] font-heading">1. Operación Técnica en Terreno</h4>
+                            <p class="text-xs text-[#B85D19] font-semibold font-mono">Grúa Horquilla, Patio & Maniobras</p>
+                        </div>
+                    </div>
+                    <ul class="text-[#4A3427] text-sm space-y-3 leading-relaxed list-disc list-inside">
+                        <li><strong class="text-[#261810]">Licencia Clase D al día:</strong> Operación experta de grúa horquilla con más de 10 años de práctica técnica ininterrumpida.</li>
+                        <li><strong class="text-[#261810]">Alto Tonelaje:</strong> Carga, descarga, estiba y paletizado de materiales y estructuras metálicas de alto peso.</li>
+                        <li><strong class="text-[#261810]">Residuos & Mantención:</strong> Control de residuos industriales, paleteo y mantenimiento riguroso del orden en patios.</li>
+                    </ul>
+                </div>
+
+                <!-- Pillar 2: Gestión & Liderazgo de Bodega -->
+                <div class="industrial-card p-8 space-y-5 border-l-8 border-l-[#261810]">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-14 h-14 rounded-2xl bg-[#261810] text-white flex items-center justify-center text-3xl shadow-sm">
+                            <i class="fa-solid fa-boxes-stacked"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xl font-bold text-[#261810] font-heading">2. Gestión & Liderazgo de Bodega</h4>
+                            <p class="text-xs text-[#B85D19] font-semibold font-mono">Jefe de Bodega & Control de Inventario</p>
+                        </div>
+                    </div>
+                    <ul class="text-[#4A3427] text-sm space-y-3 leading-relaxed list-disc list-inside">
+                        <li><strong class="text-[#261810]">Jefatura de Bodega:</strong> Supervisión de los procesos de recepción, almacenamiento, preparación de pedidos y despacho.</li>
+                        <li><strong class="text-[#261810]">Cuadratura de Stock:</strong> Cotejo sistemático de inventario físico versus registros digitales y ajuste de discrepancias.</li>
+                        <li><strong class="text-[#261810]">Optimización de Flujos:</strong> Coordinación de insumos hacia líneas de producción y cumplimiento estricto de metas.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPETENCIAS Y HABILIDADES TÉCNICAS -->
+    <section id="competencias" class="py-20 bg-[#FAF6F0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-mono font-bold tracking-wider text-[#B85D19] uppercase">[ HABILIDADES TÉCNICAS ]</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-[#261810] font-heading">Especialidades & Competencias Clave</h3>
+                <p class="text-[#4A3427] text-sm sm:text-base">
+                    Resumen técnico de capacidades operativas y herramientas de control logístico.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Skill Card 1 -->
+                <div class="industrial-card p-6 space-y-4">
+                    <div class="flex items-center space-x-3 text-[#B85D19]">
+                        <div class="p-3 bg-[#F3E7DB] rounded-xl text-[#B85D19] border border-[#D6C1AD]">
+                            <i class="fa-solid fa-[#truck-ramp-box] fa-truck text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-[#261810] font-heading">Maquinaria Pesada</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="industrial-badge px-3 py-1.5 text-xs font-bold rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-circle-check text-[#B85D19]"></i> Grúa Horquilla (+10 Años)</span>
+                        <span class="industrial-badge px-3 py-1.5 text-xs font-bold rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-id-card text-[#B85D19]"></i> Licencia Clase D</span>
+                        <span class="industrial-badge px-3 py-1.5 text-xs font-bold rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-truck text-[#B85D19]"></i> Carga & Descarga</span>
+                        <span class="industrial-badge px-3 py-1.5 text-xs font-bold rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-box text-[#B85D19]"></i> Estiba & Paletizado</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="industrial-card p-6 space-y-4">
+                    <div class="flex items-center space-x-3 text-[#4A3427]">
+                        <div class="p-3 bg-[#F3E7DB] rounded-xl text-[#4A3427] border border-[#D6C1AD]">
+                            <i class="fa-solid fa-warehouse text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-[#261810] font-heading">Gestión Logística</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="industrial-badge px-3 py-1.5 text-xs font-bold rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-check text-[#B85D19]"></i> Cuadratura Inventario</span>
+                        <span class="industrial-badge px-3 py-1.5 text-xs font-bold rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-check text-[#B85D19]"></i> Físico vs. Digital</span>
+                        <span class="industrial-badge px-3 py-1.5 text-xs font-bold rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-check text-[#B85D19]"></i> Recepción & Despacho</span>
+                        <span class="industrial-badge px-3 py-1.5 text-xs font-bold rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-check text-[#B85D19]"></i> Control de Insumos</span>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="industrial-card p-6 space-y-4">
+                    <div class="flex items-center space-x-3 text-[#A84313]">
+                        <div class="p-3 bg-[#F3E7DB] rounded-xl text-[#A84313] border border-[#D6C1AD]">
+                            <i class="fa-solid fa-clipboard-list text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-bold text-[#261810] font-heading">Producción & Seguridad</h4>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="industrial-badge px-3 py-1.5 text-xs font-bold rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-file-lines text-[#B85D19]"></i> Partes Diarios</span>
+                        <span class="industrial-badge px-3 py-1.5 text-xs font-bold rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-shield text-[#B85D19]"></i> Normas de Seguridad</span>
+                        <span class="industrial-badge px-3 py-1.5 text-xs font-bold rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-broom text-[#B85D19]"></i> Orden de Patios</span>
+                        <span class="industrial-badge px-3 py-1.5 text-xs font-bold rounded-lg flex items-center gap-1.5"><i class="fa-solid fa-recycle text-[#B85D19]"></i> Control Residuos</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCIA LABORAL (TIMELINE INDUSTRIAL) -->
+    <section id="experiencia" class="py-20 bg-[#F4EBE1]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-mono font-bold tracking-wider text-[#B85D19] uppercase">[ HISTORIAL LABORAL ]</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-[#261810] font-heading">Trayectoria Profesional Comprobable</h3>
+                <p class="text-[#4A3427] text-sm sm:text-base">
+                    Más de 10 años de trabajo ininterrumpido en logística, montajes e industrias.
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-8 relative before:absolute before:inset-0 before:left-8 md:before:left-1/2 before:w-1 before:bg-[#D6C1AD]">
+                
+                <!-- Item 1: Empresa Dimensiones -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between group">
+                    <div class="flex items-center w-full md:w-1/2 md:pr-8 mb-4 md:mb-0 md:text-right order-1">
+                        <div class="industrial-card p-6 w-full space-y-3">
+                            <span class="inline-block px-3 py-1 rounded-full bg-[#261810] text-[#FAF6F0] text-xs font-mono font-bold">2026 – Presente</span>
+                            <h4 class="text-lg font-bold text-[#261810] font-heading">Operario / Paletero</h4>
+                            <p class="text-xs text-[#B85D19] font-bold">Empresa Dimensiones</p>
+                            <p class="text-[#4A3427] text-xs sm:text-sm leading-relaxed">
+                                Manejo y control de residuos industriales, soporte operativo continuo como paletero y mantención del orden, higiene y seguridad de las áreas de trabajo.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-9 h-9 rounded-full bg-[#B85D19] border-4 border-[#F4EBE1] flex items-center justify-center text-white text-xs font-extrabold z-10 shadow-md order-2">
+                        1
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-8 order-3 hidden md:block"></div>
+                </div>
+
+                <!-- Item 2: Manumetal Jefe de Bodega -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between group">
+                    <div class="w-full md:w-1/2 md:pr-8 order-3 md:order-1 hidden md:block"></div>
+                    <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-9 h-9 rounded-full bg-[#261810] border-4 border-[#F4EBE1] flex items-center justify-center text-white text-xs font-extrabold z-10 shadow-md order-2">
+                        2
+                    </div>
+                    <div class="flex items-center w-full md:w-1/2 md:pl-8 mb-4 md:mb-0 order-1 md:order-3">
+                        <div class="industrial-card p-6 w-full space-y-3">
+                            <span class="inline-block px-3 py-1 rounded-full bg-[#B85D19] text-white text-xs font-mono font-bold">2020 – 2025</span>
+                            <h4 class="text-lg font-bold text-[#261810] font-heading">Jefe de Bodega</h4>
+                            <p class="text-xs text-[#B85D19] font-bold">Manumetal Arriendo y Montajes S.A. (Santiago)</p>
+                            <ul class="text-[#4A3427] text-xs sm:text-sm space-y-2 list-disc list-inside">
+                                <li>Supervisión integral de los procesos de recepción, almacenamiento, inventario y despacho de mercancías e insumos.</li>
+                                <li>Cuadratura periódica de inventario físico contra registros digitales y resolución oportuna de discrepancias.</li>
+                                <li>Implementación de estrategias logísticas para agilizar el flujo de materiales hacia producción.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Manumetal Operador Grúa Horquilla -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between group">
+                    <div class="flex items-center w-full md:w-1/2 md:pr-8 mb-4 md:mb-0 md:text-right order-1">
+                        <div class="industrial-card p-6 w-full space-y-3">
+                            <span class="inline-block px-3 py-1 rounded-full bg-[#4A3427] text-white text-xs font-mono font-bold">2012 – 2020</span>
+                            <h4 class="text-lg font-bold text-[#261810] font-heading">Operador de Grúa Horquilla</h4>
+                            <p class="text-xs text-[#B85D19] font-bold">Manumetal Arriendo y Montajes S.A. (Santiago)</p>
+                            <ul class="text-[#4A3427] text-xs sm:text-sm space-y-2 list-disc list-inside">
+                                <li>Operación de grúa horquilla para carga, descarga y traslado de materiales y estructuras metálicas de alto tonelaje.</li>
+                                <li>Registro diario de partes de producción y cumplimiento riguroso de normativas internas de seguridad.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-9 h-9 rounded-full bg-[#B85D19] border-4 border-[#F4EBE1] flex items-center justify-center text-white text-xs font-extrabold z-10 shadow-md order-2">
+                        3
+                    </div>
+                    <div class="w-full md:w-1/2 md:pl-8 order-3 hidden md:block"></div>
+                </div>
+
+                <!-- Item 4: Exportaciones Miguel -->
+                <div class="relative flex flex-col md:flex-row items-center justify-between group">
+                    <div class="w-full md:w-1/2 md:pr-8 order-3 md:order-1 hidden md:block"></div>
+                    <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-9 h-9 rounded-full bg-[#261810] border-4 border-[#F4EBE1] flex items-center justify-center text-white text-xs font-extrabold z-10 shadow-md order-2">
+                        4
+                    </div>
+                    <div class="flex items-center w-full md:w-1/2 md:pl-8 mb-4 md:mb-0 order-1 md:order-3">
+                        <div class="industrial-card p-6 w-full space-y-3">
+                            <span class="inline-block px-3 py-1 rounded-full bg-[#F3E7DB] text-[#261810] text-xs font-mono font-bold border border-[#D6C1AD]">2010 – 2012</span>
+                            <h4 class="text-lg font-bold text-[#261810] font-heading">Ayudante de Patio</h4>
+                            <p class="text-xs text-[#B85D19] font-bold">Exportaciones e Importaciones Miguel (San José de Maipo)</p>
+                            <p class="text-[#4A3427] text-xs sm:text-sm leading-relaxed">
+                                Ejecución de tareas programadas de apoyo en patio, traslado de carga general y mantenimiento de áreas operativas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FORTALEZAS CLAVE -->
+    <section id="fortalezas" class="py-20 bg-[#FAF6F0]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <h2 class="text-xs font-mono font-bold tracking-wider text-[#B85D19] uppercase">[ VALOR AÑADIDO ]</h2>
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-[#261810] font-heading">Fortalezas Principales para el Equipo</h3>
+                <p class="text-[#4A3427] text-sm sm:text-base">
+                    Garantía de rendimiento, seguridad y continuidad operativa en bodegas.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <div class="industrial-card p-6 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-[#F3E7DB] text-[#B85D19] flex items-center justify-center text-2xl border border-[#D6C1AD]">
+                        <i class="fa-solid fa-[#award] fa-medal"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-[#261810] font-heading">Trayectoria Comprobable</h4>
+                    <p class="text-[#4A3427] text-xs sm:text-sm leading-relaxed">
+                        Más de una década de experiencia continua en el rubro logístico e industrial, garantizando destreza técnica, velocidad y cero improvisación.
+                    </p>
+                </div>
+
+                <div class="industrial-card p-6 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-[#F3E7DB] text-[#261810] flex items-center justify-center text-2xl border border-[#D6C1AD]">
+                        <i class="fa-solid fa-users-gear"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-[#261810] font-heading">Capacidad 2 en 1</h4>
+                    <p class="text-[#4A3427] text-xs sm:text-sm leading-relaxed">
+                        Combina la maniobra directa en terreno (grúa horquilla y patio) con el liderazgo administrativo como Jefe de Bodega y auditor de stock.
+                    </p>
+                </div>
+
+                <div class="industrial-card p-6 space-y-3">
+                    <div class="w-12 h-12 rounded-xl bg-[#F3E7DB] text-[#A84313] flex items-center justify-center text-2xl border border-[#D6C1AD]">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h4 class="text-lg font-bold text-[#261810] font-heading">Resolución de Incidencias</h4>
+                    <p class="text-[#4A3427] text-xs sm:text-sm leading-relaxed">
+                        Capacidad demostrada para identificar discrepancias en stock y tomar decisiones operativas bajo presión asegurando la continuidad de despachos.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACTO & FORMULARIO -->
+    <section id="contacto" class="py-20 bg-[#F4EBE1]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Info Column -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="space-y-3">
+                        <h2 class="text-xs font-mono font-bold tracking-wider text-[#B85D19] uppercase">[ CONTACTO DIRECTO ]</h2>
+                        <h3 class="text-3xl sm:text-4xl font-extrabold text-[#261810] font-heading">¿Interesado en mi perfil?</h3>
+                        <p class="text-[#4A3427] text-sm sm:text-base leading-relaxed">
+                            Disponible inmediatamente para contrataciones como Jefe de Bodega, Operador de Grúa Horquilla o Supervisor de Operaciones.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 text-sm font-medium">
+                        
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-white border border-[#E5D5C5] shadow-sm">
+                            <div class="p-3 bg-[#F3E7DB] rounded-lg text-[#B85D19] text-xl">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#4A3427] font-semibold">Teléfono Directo / WhatsApp</p>
+                                <a href="tel:+56920774413" class="text-[#261810] font-bold text-base hover:text-[#B85D19]">+56 9 2077 4413</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-white border border-[#E5D5C5] shadow-sm">
+                            <div class="p-3 bg-[#F3E7DB] rounded-lg text-[#B85D19] text-xl">
+                                <i class="fa-solid fa-id-card"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#4A3427] font-semibold">RUT de Identificación</p>
+                                <p class="text-[#261810] font-bold">17.757.942-4</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4 p-4 rounded-xl bg-white border border-[#E5D5C5] shadow-sm">
+                            <div class="p-3 bg-[#F3E7DB] rounded-lg text-[#B85D19] text-xl">
+                                <i class="fa-solid fa-truck-front"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-[#4A3427] font-semibold">Licencia de Conducir</p>
+                                <p class="text-[#261810] font-bold">Clase D (Al día y vigente)</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Web3Forms Form Column -->
+                <div class="lg:col-span-7">
+                    <div id="contact-form-container" class="industrial-card p-8 space-y-6 border-2 border-[#B85D19]/30">
+                        <h4 class="text-xl font-bold text-[#261810] font-heading flex items-center gap-2">
+                            <i class="fa-solid fa-paper-plane text-[#B85D19]"></i> Enviar Mensaje a Fernando
+                        </h4>
+
+                        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                            <input type="hidden" name="subject" value="Nuevo Mensaje de Oferta Laboral para Fernando Figueroa">
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div class="space-y-1">
+                                    <label for="name" class="text-xs font-semibold text-[#4A3427]">Nombre Completo / Empresa</label>
+                                    <input type="text" id="name" name="name" required placeholder="Tu nombre..." class="w-full px-4 py-3 rounded-xl bg-[#FAF6F0] border border-[#DEC8B5] text-[#261810] placeholder-[#A89482] focus:outline-none focus:border-[#B85D19] text-sm">
+                                </div>
+                                <div class="space-y-1">
+                                    <label for="email" class="text-xs font-semibold text-[#4A3427]">Correo o Teléfono de Contacto</label>
+                                    <input type="text" id="email" name="email" required placeholder="contacto@empresa.com..." class="w-full px-4 py-3 rounded-xl bg-[#FAF6F0] border border-[#DEC8B5] text-[#261810] placeholder-[#A89482] focus:outline-none focus:border-[#B85D19] text-sm">
+                                </div>
+                            </div>
+
+                            <div class="space-y-1">
+                                <label for="message" class="text-xs font-semibold text-[#4A3427]">Mensaje / Detalles de la Vacante</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Escribe los detalles de la oferta aquí..." class="w-full px-4 py-3 rounded-xl bg-[#FAF6F0] border border-[#DEC8B5] text-[#261810] placeholder-[#A89482] focus:outline-none focus:border-[#B85D19] text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-3.5 px-6 rounded-xl bg-gradient-to-r from-[#B85D19] to-[#A84313] hover:from-[#A84313] hover:to-[#B85D19] text-white font-bold shadow-lg shadow-[#B85D19]/30 transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-[#261810] border-t-2 border-[#B85D19] text-center text-xs text-[#F4EBE1]">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>© 2026 Fernando Alejandro Figueroa Cerda | <span class="text-[#D6C1AD]">Diseñado & Desarrollado por <strong class="text-white font-semibold">Tiare Pérez Concha</strong></span></p>
+            <a href="#inicio" class="text-[#D6C1AD] hover:text-white transition-colors flex items-center gap-1.5 font-medium">Ir arriba <i class="fa-solid fa-arrow-up text-xs"></i></a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

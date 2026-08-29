@@ -1,0 +1,101 @@
+/* Custom Styles for Fernando Figueroa Cerda Portfolio - Industrial Coffee & Terracotta Theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+:root {
+    --bg-warm-cream: #FAF6F0;
+    --bg-[#FAF3EB]: #F4EBE1;
+    --bg-card-warm: #FFFFFF;
+    --border-warm: #E2D3C4;
+    --text-espresso: #261810;
+    --text-mocha: #4A3427;
+    --accent-copper: #B85D19;
+    --accent-terracotta: #A84313;
+    --accent-amber: #D97706;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-warm-cream);
+    color: var(--text-espresso);
+}
+
+h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Industrial Unique Card Effects */
+.industrial-card {
+    background-color: #FFFFFF;
+    border: 2px solid #E5D5C5;
+    border-radius: 1.25rem;
+    box-shadow: 0 12px 35px rgba(38, 24, 16, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.industrial-card:hover {
+    border-color: #B85D19;
+    transform: translateY(-4px);
+    box-shadow: 0 18px 45px rgba(184, 93, 25, 0.12);
+}
+
+.industrial-card-dark {
+    background: linear-gradient(145deg, #261810, #3B2419);
+    border: 2px solid #6E350E;
+    color: #F7F2EA;
+}
+
+.industrial-badge {
+    background-color: #F3E7DB;
+    border: 1px solid #D6C1AD;
+    color: #4A3427;
+}
+
+/* Industrial Metric Block */
+.metric-box {
+    background: linear-gradient(135deg, #FAF3EB 0%, #EFE2D3 100%);
+    border: 2px solid #DEC8B5;
+    border-radius: 1rem;
+}
+
+/* Custom Industrial Scrollbar */
+::-webkit-scrollbar {
+    width: 9px;
+}
+::-webkit-scrollbar-track {
+    background: #F4EBE1;
+}
+::-webkit-scrollbar-thumb {
+    background: #B85D19;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #6E350E;
+}
+
+/* Pulse Animation */
+@keyframes pulse-copper {
+    0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(184, 93, 25, 0.7); }
+    70% { transform: scale(1); box-shadow: 0 0 0 8px rgba(184, 93, 25, 0); }
+    100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(184, 93, 25, 0); }
+}
+
+.pulse-copper {
+    animation: pulse-copper 2s infinite;
+}
+
+/* PRINT STYLES */
+@media print {
+    nav, footer, .no-print, #theme-toggle, .btn-action, #contact-form-container {
+        display: none !important;
+    }
+
+    body {
+        background-color: #ffffff !important;
+        color: #261810 !important;
+        font-size: 11pt;
+        line-height: 1.4;
+        padding: 0;
+        margin: 0;
+    }
+}
